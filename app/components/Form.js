@@ -21,9 +21,6 @@ import {
   ButtonDSelected
 } from "../redux/actions";
 
-import storeGlobal from "../redux/store";
-const store = storeGlobal;
-
 function Form() {
   const data = useSelector(state => state.data);
   const dispatch = useDispatch();

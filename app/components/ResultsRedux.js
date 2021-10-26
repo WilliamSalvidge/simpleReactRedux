@@ -23,13 +23,13 @@ function Results() {
 
   useEffect(() => {
     setTimeout(() => {
-      let trueKeys = Object.keys(data).filter(
-        x => data[x] == true
-      );
-      let resultsMessageKeys = trueKeys.map(
-        x => resultsMessages[x]
-      );
-      setResultsData(resultsMessageKeys);
+      // let trueKeys = Object.keys(data).filter(
+      //   x => data[x] == true
+      // );
+      // let resultsMessageKeys = trueKeys.map(
+      //   x => resultsMessages[x]
+      // );
+      setResultsData(data);
       setLoading(false);
     }, 2000);
   }, []);
@@ -38,7 +38,8 @@ function Results() {
 
   return (
     <>
-      <div className="checkbox">
+      <p>{data}</p>
+      {/* <div className="checkbox">
         {resultsData.map((result, idx) => {
           return (
             <div key={idx}>
@@ -46,7 +47,7 @@ function Results() {
             </div>
           );
         })}
-      </div>
+      </div> */}
       <Link to="/">
         <Button
           type="submit"
