@@ -38,7 +38,7 @@ function Results() {
 
   return (
     <>
-      <p>{typeof data}</p>
+      <p>{Object.keys(data)}</p>
       <h1>Hey</h1>
       {/* <div className="checkbox">
         {resultsData.map((result, idx) => {
