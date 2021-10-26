@@ -44,7 +44,7 @@ function Form() {
                   }}
                 />
               }
-              label="ButtonA"
+              label="Button A"
             />
             <FormControlLabel
               control={
@@ -60,7 +60,7 @@ function Form() {
                   }}
                 />
               }
-              label="ButtonB"
+              label="Button B"
             />
             <FormControlLabel
               control={
@@ -76,7 +76,7 @@ function Form() {
                   }}
                 />
               }
-              label="ButtonC"
+              label="Button C"
             />
             <FormControlLabel
               control={
@@ -92,7 +92,7 @@ function Form() {
                   }}
                 />
               }
-              label="ButtonD"
+              label="Button D"
             />
           </div>
         </div>
