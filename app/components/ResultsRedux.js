@@ -23,13 +23,14 @@ function Results() {
 
   useEffect(() => {
     setTimeout(() => {
-      // let trueKeys = Object.keys(data).filter(
-      //   x => data[x] == true
-      // );
-      // let resultsMessageKeys = trueKeys.map(
-      //   x => resultsMessages[x]
-      // );
-      setResultsData(data);
+      let trueKeys = Object.keys(data).filter(
+        x => data[x] == true
+      );
+      console.log(trueKeys);
+      let resultsMessageKeys = trueKeys.map(
+        x => resultsMessages[x]
+      );
+      setResultsData(resultsMessageKeys);
       setLoading(false);
     }, 2000);
   }, []);
@@ -40,6 +41,7 @@ function Results() {
     <>
       <p>{typeof Object.keys(data)}</p>
       <p>{JSON.stringify(data)}</p>
+      <p>{resultsData}</p>
       <p>{JSON.stringify(resultsData)}</p>
       <h1>Hey</h1>
       {/* <div className="checkbox">
