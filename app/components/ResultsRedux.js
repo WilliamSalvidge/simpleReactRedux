@@ -3,7 +3,8 @@ import React, {
   useEffect,
   useContext
 } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 import Loading from "./Loading";
 import { useSelector } from "react-redux";
 
