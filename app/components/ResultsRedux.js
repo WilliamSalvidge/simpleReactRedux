@@ -9,10 +9,10 @@ import Loading from "./Loading";
 import { useSelector } from "react-redux";
 
 const resultsMessages = {
-  buttonA: "You have selected button A!",
-  buttonB: "You have selected button B!",
-  buttonC: "You have selected button C!",
-  buttonD: "You have selected button D!"
+  ButtonA: "You have selected button A!",
+  ButtonB: "You have selected button B!",
+  ButtonC: "You have selected button C!",
+  ButtonD: "You have selected button D!"
 };
 
 function Results() {
@@ -39,12 +39,7 @@ function Results() {
 
   return (
     <>
-      <p>{typeof Object.keys(data)}</p>
-      <p>{JSON.stringify(data)}</p>
-      <p>{resultsData}</p>
-      <p>{JSON.stringify(resultsData)}</p>
-      <h1>Hey</h1>
-      {/* <div className="checkbox">
+      <div className="checkbox">
         {resultsData.map((result, idx) => {
           return (
             <div key={idx}>
@@ -52,7 +47,8 @@ function Results() {
             </div>
           );
         })}
-      </div> */}
+      </div>
+      }
       <Link to="/">
         <Button
           type="submit"
