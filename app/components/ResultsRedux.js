@@ -48,7 +48,6 @@ function Results() {
           );
         })}
       </div>
-      }
       <Link to="/">
         <Button
           type="submit"

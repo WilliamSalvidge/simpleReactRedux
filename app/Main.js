@@ -18,7 +18,7 @@ function App() {
       <div>
         <main>
           <div className="display-flex-ai-jc heading-banner">
-            <h1>Hey Will</h1>
+            <h1>State With Redux Example</h1>
           </div>
           <Switch>
             <Route
